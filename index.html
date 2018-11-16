@@ -28,7 +28,7 @@
 
   <body id="page-top">
   <!-- Button Click -->
-	<button onclick="topFunction()"id="myBtn" title-"Go to Top">Top</button>
+    <button onclick="topFunction()"id="myBtn" title-"Go to Top">Top</button>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none">Janvi Shah</span>
@@ -67,7 +67,7 @@
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
         <div class="my-auto">
 		<!-- Where I want the message to go -->
-		<p class="lead">I'm so confused</p>
+		<p class="lead">Hi!</p>
           <h1 class="mb-0">Janvi
             <span class="text-primary">Shah</span>
           </h1>
@@ -75,7 +75,7 @@
           <div class="subheading mb-5""lead">5112 W Arrowhead Lakes Drive · Glendale, AZ 85308 · (602) 284-7898 ·
             <a href="mailto:name@email.com">Jhshah3@gmail.com</a>
           </div>
-          <p class="lead mb-5">Currently I'm part of Thunderbird School of Global Managements pioneer undergrad program, as well as a communication major with ASU's The New College. I'm choosing to pursue a double major because I believe that globalization has created a competitive space that demands the innovativeness that a diverse workforce brings. My goal is to be the glue that ties those people together, because true productivity begins with cohesiveness. My management experience working with medical healthcare teams, as well as my education has given me the ability to create and mediate that collaborative space.</p>
+          <p class="lead mb-5""lead">Currently I'm part of Thunderbird School of Global Managements pioneer undergrad program, as well as a communication major with ASU's The New College. I'm choosing to pursue a double major because I believe that globalization has created a competitive space that demands the innovativeness that a diverse workforce brings. My goal is to be the glue that ties those people together, because true productivity begins with cohesiveness. My management experience working with medical healthcare teams, as well as my education has given me the ability to create and mediate that collaborative space.</p>
           <div class="social-icons">
             <a href="#">
               <i class="fab fa-linkedin-in"></i>
@@ -293,11 +293,12 @@
 	</script>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
 		<script>
 			//When the user scrolls down 20px from the top of the document, show the button window.onscroll = function () {scrollFunction()};
 		
 			function scrollFunction() {
-			if (document.body.scrollTop.20 || document.documentElement.scrollTop.20) {
+			if (document.body.scrollTop>20 || document.documentElement.scrollTop>20) {
 				document.getElementByID("myBtn").style.display="block";
 			} else{
 				document.getElementById("myBtn").style.display="none";
@@ -307,8 +308,9 @@
 			
 			function topFunction() {
 				document.body.scrollTop=0;
-				document.documenetElement.scrollTop=0;
+				document.documentElement.scrollTop=0;
 				document.getElementsByClassName('lead')[0].style.color="blue";
+        document.getElementsByClassName('lead')[0].style.fontSize="3em";
 				document.getElementsByClassName('lead')[0].innerHTML ="Thank you for visiting";
 				}
 		</script>
