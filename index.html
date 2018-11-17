@@ -271,27 +271,37 @@
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="Contact Me">
 
-  <p class="h3" id="contact">Contact Me</p>
-  <div class="container bg-white" style="margin-bottom: 20px; padding-bottom: 10px; padding-top: 10px;">
-      <form action="https://formspree.io/jhshah3@asu.edu" method="post">
-      <form id="add-user-input">
-        <div class="form-group">
-          <label for="inputName">Name*</label>
-          <input type="text" class="form-control" name="name" id="name"as the required field" required>
-        </div>
-        <div class="form-group">
-          <label for="email">Email*</label>
-          <input type="email" class="form-control" name="email" id="email" required>
-        </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea class="form-control" name="message" id="message" rows="3"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Send</button>
-      </form>
-    </div
-  </section>
+<div id="demo" class="carousel slide" data-ride="carousel">
 
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="Image1.PNG" alt="Airbender Power">
+    </div>
+    <div class="carousel-item">
+      <img src="Image2.PNG" alt="My best friend & I">
+    </div>
+    <div class="carousel-item">
+      <img src="Image3.PNG" alt="Selfie">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
 	<!-- Firebase Developmeent Environement -->
 	<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
